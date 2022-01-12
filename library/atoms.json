@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "HIDDEN-PROCESS-EXECVEAT",
+        "execve" : [ "mkdir", "-p", "/tmp/.hidden" ],
+        "copy" : [ "/proc/self/exe", "/tmp/.hidden/.chain_reactor_hidden" ],
+        "execveat" : [ "/tmp/.hidden/.chain_reactor_hidden", "exit" ],
+        "remove" : [ "/tmp/.hidden" ]
+    },
+    {
+        "name" : "HIDDEN-PROCESS-EXECVE",
+        "execve" : [ "mkdir", "-p", "/tmp/.hidden" ],
+        "copy" : [ "/proc/self/exe", "/tmp/.hidden/.chain_reactor_hidden" ],
+        "execve" : [ "/tmp/.hidden/.chain_reactor_hidden", "exit" ],
+        "remove" : [ "/tmp/.hidden" ]
+    },
+    {
+        "name": "LS-L-COMMAND",
+        "execveat": ["ls", "-l"]
+    }
+]

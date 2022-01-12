@@ -1,0 +1,7 @@
+{
+    "name": "Hidden EXECVE",
+    "atoms": [
+        "HIDDEN-PROCESS-EXECVE",
+        "HIDDEN-PROCESS-EXECVEAT"
+    ]
+}
